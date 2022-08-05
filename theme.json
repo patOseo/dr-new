@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "settings": {
+        "layout": {
+            "contentSize": "1000px",
+            "wideSize": "1400px"
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    }
+}
