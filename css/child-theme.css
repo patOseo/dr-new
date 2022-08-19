@@ -15062,6 +15062,13 @@ footer.site-footer a:hover {
   font-size: 2rem;
 }
 
+@media (max-width: 767.98px) {
+  .wp-block-group {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .card {
   padding: 1rem;
   border: 0;

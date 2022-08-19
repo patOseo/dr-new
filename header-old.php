@@ -4,14 +4,13 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Understrap
+ * @package understrap
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$bootstrap_version = get_theme_mod( 'understrap_bootstrap_version', 'bootstrap4' );
-$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
+$container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -46,10 +45,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar">
+	<div id="wrapper-navbar">
+
+		<div class="container-fluid">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+		<nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
 
-	</header><!-- #wrapper-navbar end -->
+			<h2 id="main-nav-label" class="sr-only">
+				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
+			</h2>
+
+					<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="/wp-content/themes/davidoff/images/davidoff.png" alt="Davidoff Roofing" width="220" height="73"></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+					<i class="fa fa-bars"></i>
+				</button>
+
+				<!-- The WordPress Menu goes here -->
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse justify-content-end',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav ml-auto',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'depth'           => 2,
+						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+					)
+				);
+				?>
+
+
+		</nav><!-- .site-navigation -->
+
+		</div><!-- .container-fluid -->
+
+	</div><!-- #wrapper-navbar end -->

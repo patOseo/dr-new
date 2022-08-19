@@ -32,7 +32,7 @@ else {
 
 <div class="wrapper" id="full-width-page-wrapper">
 
-	<div class="container-fluid" id="content">
+	<div class="container-fluid px-0" id="content">
 
 			<div class="content-area" id="primary">
 

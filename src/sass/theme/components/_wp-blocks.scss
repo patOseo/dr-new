@@ -1,0 +1,6 @@
+.wp-block-group {
+	@include media-breakpoint-down(md) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
