@@ -4,3 +4,9 @@
 		padding-right: 1rem;
 	}
 }
+
+.last-block {
+	&.has-background {
+		margin-bottom: -1.5rem;
+	}
+}

@@ -15069,6 +15069,10 @@ footer.site-footer a:hover {
   }
 }
 
+.last-block.has-background {
+  margin-bottom: -1.5rem;
+}
+
 .card {
   padding: 1rem;
   border: 0;
