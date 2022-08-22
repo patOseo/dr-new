@@ -122,3 +122,4 @@ add_theme_support( 'align-wide' );
 // Custom Gutenberg Blocks 
 require_once('functions/acf-blocks.php');
 require_once('functions/menus.php');
+require_once('functions/patterns.php');
