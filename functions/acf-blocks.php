@@ -42,6 +42,17 @@ function acf_custom_blocks() {
 			'icon'				=> 'star-filled',
 			'keywords'			=> array( 'star', 'testimonial' ),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'accordion',
+			'title'				=> __('Accordion'),
+			'description'		=> __('A custom block for an accordion.'),
+			'render_template'	=> 'global-templates/blocks/block-accordion.php',
+			'category'			=> 'acf-blocks',
+			'icon'				=> 'list-view',
+			'mode'				=> 'edit',
+			'keywords'			=> array( 'faq', 'accordion' ),
+		));
 	}
 }
 

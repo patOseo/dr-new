@@ -15240,6 +15240,12 @@ hr.divider {
   margin-bottom: 0;
 }
 
+#accordion .card {
+  padding: 0;
+  min-height: auto !important;
+  text-align: left;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
