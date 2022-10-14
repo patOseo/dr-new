@@ -32,13 +32,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<p><?php the_field('address', 'option'); ?></p>
 						<p class="mb-0">Phone: <a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></p>
 						<p>Email: <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></p>
-						<a href="<?php the_field('facebook', 'option'); ?>">
+						<a href="<?php the_field('facebook', 'option'); ?>" target="_blank" rel="noopener,noreferrer">
 							<span class="fa-stack fa-2x text-center">
 								<i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-facebook fa-stack"></i>
 							</span>
 						</a>
-						<a href="<?php the_field('twitter', 'option'); ?>">
+						<a href="<?php the_field('twitter', 'option'); ?>" target="_blank" rel="noopener,noreferrer">
 							<span class="fa-stack fa-2x text-center">
 								<i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-twitter fa-stack"></i>
