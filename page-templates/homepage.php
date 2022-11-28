@@ -102,6 +102,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 </div>
 
+<?php if(get_field('json_schema')) { 
+	echo get_field('json_schema'); 
+} ?>
+
 <div class="video-container">
 	<div class="video-close"><i class="fa fa-times"></i></div>
 	<div class="video-box">
@@ -118,5 +122,6 @@ jQuery(function($){
 	});
 });
 </script>
+
 <?php
 get_footer();

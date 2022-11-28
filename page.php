@@ -53,5 +53,9 @@ else {
 
 </div><!-- #full-width-page-wrapper -->
 
+<?php if(get_field('json_schema')) { 
+	the_field('json_schema'); 
+} ?>
+
 <?php
 get_footer();
