@@ -44,6 +44,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<i class="fa fa-twitter fa-stack"></i>
 							</span>
 						</a>
+						<a href="<?php the_field('instagram', 'option'); ?>" target="_blank" rel="noopener,noreferrer">
+							<span class="fa-stack fa-2x text-center">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-instagram fa-stack"></i>
+							</span>
+						</a>
 					</div>
 					<div class="col-md-3 my-4 my-md-0">
 						<p class="h5"><a href="/roofing-services/">Roofing Services</a></p>

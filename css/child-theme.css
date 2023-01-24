@@ -14886,7 +14886,10 @@ footer.site-footer .footer-social {
 footer.site-footer .footer-social a:hover {
   text-decoration: none;
 }
-footer.site-footer .footer-social .fa-twitter, footer.site-footer .footer-social .fa-facebook {
+footer.site-footer .footer-social .fa-stack {
+  line-height: 1.95em;
+}
+footer.site-footer .footer-social .fa-twitter, footer.site-footer .footer-social .fa-facebook, footer.site-footer .footer-social .fa-instagram {
   color: #333333;
   font-size: 1.5rem;
 }
