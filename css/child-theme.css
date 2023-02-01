@@ -15083,6 +15083,9 @@ footer.site-footer a:hover {
   text-align: center;
   min-height: 308px;
 }
+.card.no-min-height {
+  min-height: 0 !important;
+}
 .card hr.divider {
   margin: 1rem 0;
 }

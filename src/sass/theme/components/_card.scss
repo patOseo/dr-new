@@ -6,6 +6,10 @@
 	text-align: center;
 	min-height: 308px;
 
+	&.no-min-height {
+		min-height: 0 !important;
+	}
+
 	hr.divider {
 		margin: 1rem 0;
 
