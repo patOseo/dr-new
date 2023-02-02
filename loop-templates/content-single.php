@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<hr class="divider">
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<?php echo get_the_post_thumbnail( $post->ID, 'large', array('class' => 'mb-3') ); ?>
 
 	<div class="entry-content">
 
