@@ -17,6 +17,16 @@ body {
 	box-shadow: 1px 5px 26px -20px #616060;
 }
 
+.entry-content {
+	.wp-block-image {
+		&.no-shadow {
+			img {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
 [class^="wp-container-"] > :where(:not(.alignleft):not(.alignright)) {
 	max-width: 1140px;
 	margin-left: auto !important;
