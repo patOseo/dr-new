@@ -65,7 +65,7 @@ if ( ! empty( $block['className'] ) ) {
 						settings: {
 							slidesToShow: 1,
 							centerMode: true,
-							centerPadding: '60px'
+							centerPadding: '20px'
 						}
 					}
 				]
