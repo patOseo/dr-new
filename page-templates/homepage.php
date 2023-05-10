@@ -56,23 +56,86 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="testimonials-section">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<i class="fa fa-quote-left"></i>
-					<p><i>An absolutely outstanding company, staff and roofing crew! Brent made the quote process very easy to understand and our quote was quite comprehensive. The office staff was extremely helpful. The crew was very polite, exceedingly accommodating and they went above and beyond the contract we signed! The cost was very reasonable given the scope of the job. Our family highly recommends that anyone considering a roof replacement be sure to give priority consideration to Davidoff Roofing! </i></p>
-					<p>– Chris Quinn</p>
+
+
+<?php
+$testimonials = array(
+	array(
+		'name' => 'Karolina V.',
+		'body' => 'Dealing with Davidoff roofing from initial inquiry through the decision process, and the installation process was an absolute pleasure. They are professional, customer centered, and highly quality oriented. Davidoff roofing surpassed our expectations for this project. We highly recommend this company. We look forward to working with them on other projects.',
+	),
+	array(
+		'name' => 'Emily M.',
+		'body' => 'We are thrilled with our new roof and the excellent service that we received from the Davidoff team. The crews were professional, friendly, had a fine attention to detail and were always willing to answer any questions that we had. We learned a lot about roofing and our home throughout the process. Our neighbours were also extremely impressed by the cleanliness of the work site  and the extra effort that went into safe work practices.',
+	),
+	array(
+		'name' => 'Brent',
+		'body' => 'From the initial contact to final completion, the staff at Davidoff were very friendly and professional.  The job site was left clean at the end of each day. Davidoff did what they said they would do, using the quality materials they said they would use, and charged what they said they would charge.  We were very happy with a job well done.',
+	)
+
+);
+?>
+
+<div class="testimonials-block">
+	<p class="h2 text-center w-100 text-light mb-5">What Our Customers Have to Say</p>
+	<div class="testimonials-slider mb-0 d-flex align-items-center" id="homeTestimonials">
+		<?php foreach($testimonials as $testimonial): ?>
+			<div class="mx-3 shadowbox card single-testimonial lh-base">
+				<div class="testimonial-rating mb-3">
+					<?php for($i = 0; $i <= 5; $i++): ?>
+						<i class="fa fa-star"></i>
+					<?php endfor; ?>
 				</div>
-				<div class="col-md-4">
-					<i class="fa fa-quote-left"></i>
-					<p><i>The employees of Davidoff Roofing were awesome in installing a new roof at our home. This was under some trying times with daily temps at times in the late 30’s. They kept us informed of their progress and what was to be accomplished daily. Very happy with the finished look of the roof and the clean up each day. They are extremely professional from the estimate to the installation. Thank you guys!!!</i></p>
-					<p>– Thomas Norris</p>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-quote-left"></i>
-					<p><i>Full marks to Davidoff Roofing. The whole process from initial phone call to estimate to replacing our roof and installing a downspout went smoothly. Their knowledge and experience was a great benefit because our roof wasn't a simple tear off and replace. Modifications were required to correct some imperfections in the roof. We would highly recommend Davidoff Roofing.</i></p>
-					<p>– Glen Winegarden</p>
-				</div>
+				<p class="testimonial-body text-dark"><?php echo $testimonial['body']; ?></p>
+				<p class="testimonial-author"><?php echo $testimonial['name']; ?></p>
 			</div>
+		<?php endforeach; ?>
+	</div>
+
+	<div class="container position-relative">
+		<div class="custom-arrows text-center">
+			<span class="mx-2 custom-arrow prev pe-auto"><i class="fa fa-chevron-circle-left text-light"></i></span>
+  			<span class="mx-2 custom-arrow next pe-auto"><i class="fa fa-chevron-circle-right text-light"></i></span>
+		</div>
+		<div class="text-center">
+			<div class="custom-dots"></div>
+		</div>
+	</div>
+</div>
+
+	<?php // Adds a slick slider for the testimonial slider, shows 3 testimonials at a time ?>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript">
+	jQuery(function($){
+		$(document).ready(function(){
+			$('#homeTestimonials').slick({
+				centerMode: true,
+  				centerPadding: '120px',
+  				dots: true,
+  				appendArrows: $('.custom-arrows'),
+  				prevArrow: $('.custom-arrow.prev'),
+  				nextArrow: $('.custom-arrow.next'),
+  				appendDots: $('.custom-dots'),
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				responsive: [
+					{
+						breakpoint: 1170,
+						settings: {
+							slidesToShow: 1,
+							centerMode: true,
+							centerPadding: '20px'
+						}
+					}
+				]
+			});
+		});
+	});
+	</script>
+
+
 		</div>
 	</div>
 
