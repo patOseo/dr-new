@@ -1,5 +1,30 @@
 // Testimonials
 
+.testimonials-slider {
+	.slick-track {
+		display: flex !important;
+		align-items: center;
+	}
+}
+
+.custom-arrow {
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+.custom-dots {
+	.slick-dots {
+		position: relative !important;
+
+		li button:before {
+			font-size: 2rem;
+		}
+
+	}
+}
+
+
+
 .single-testimonial {
 	margin-bottom: 2rem;
 	min-height: auto;

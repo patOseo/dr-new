@@ -32,6 +32,18 @@ function acf_custom_blocks() {
 			'keywords'			=> array( 'card', 'box' ),
 		));
 
+		// Register testimonials block
+		acf_register_block(array(
+			'name'				=> 'testimonials',
+			'title'				=> __('Testimonials'),
+			'description'		=> __('A custom block for a testimonial slider.'),
+			'render_template'	=> 'global-templates/blocks/block-testimonials.php',
+			'category'			=> 'acf-blocks',
+			'icon'				=> 'star-filled',
+			'mode'				=> 'edit',
+			'keywords'			=> array( 'testimonials', 'reviews' ),
+		));
+
 		// register single testimonial block
 		acf_register_block(array(
 			'name'				=> 'single-testimonial',

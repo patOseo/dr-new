@@ -15192,6 +15192,23 @@ hr.divider {
   text-align: center;
 }
 
+.testimonials-slider .slick-track {
+  display: flex !important;
+  align-items: center;
+}
+
+.custom-arrow {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.custom-dots .slick-dots {
+  position: relative !important;
+}
+.custom-dots .slick-dots li button:before {
+  font-size: 2rem;
+}
+
 .single-testimonial {
   margin-bottom: 2rem;
   min-height: auto;
