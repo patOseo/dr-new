@@ -3,7 +3,7 @@ $rand = 'testimonials-' . uniqid();
 ?>
 
 <?php if(have_rows('testimonials')): ?>
-	<div class="testimonials-slider d-flex align-items-center" id="<?= $rand; ?>" style="max-width:100%">
+	<div class="testimonials-slider mb-0 d-flex align-items-center" id="<?= $rand; ?>">
 		<?php while(have_rows('testimonials')): the_row(); ?>
 			<?php 
 				$rating = get_sub_field('rating');
@@ -47,7 +47,7 @@ $rand = 'testimonials-' . uniqid();
   				prevArrow: $('.custom-arrow.prev'),
   				nextArrow: $('.custom-arrow.next'),
   				appendDots: $('.custom-dots'),
-				slidesToShow: 3,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
 				autoplaySpeed: 5000,
