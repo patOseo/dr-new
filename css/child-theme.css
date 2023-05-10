@@ -15204,6 +15204,7 @@ hr.divider {
 
 .custom-dots .slick-dots {
   position: relative !important;
+  bottom: 0 !important;
 }
 .custom-dots .slick-dots li button:before {
   font-size: 2rem;

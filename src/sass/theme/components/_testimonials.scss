@@ -15,6 +15,7 @@
 .custom-dots {
 	.slick-dots {
 		position: relative !important;
+		bottom: 0 !important;
 
 		li button:before {
 			font-size: 2rem;

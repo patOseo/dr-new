@@ -1,7 +1,14 @@
 <?php
 $rand = 'testimonials-' . uniqid();
+
+// Create class attribute allowing for custom "className".
+$class_name = 'testimonials-block';
+if ( ! empty( $block['className'] ) ) {
+    $class_name .= ' ' . $block['className'];
+}
 ?>
 
+<div class="<?php echo esc_attr( $class_name ); ?>">
 <?php if(have_rows('testimonials')): ?>
 	<div class="testimonials-slider mb-0 d-flex align-items-center" id="<?= $rand; ?>">
 		<?php while(have_rows('testimonials')): the_row(); ?>
@@ -33,6 +40,7 @@ $rand = 'testimonials-' . uniqid();
 			<div class="custom-dots"></div>
 		</div>
 	</div>
+</div>
 
 	<?php // Adds a slick slider for the testimonial slider, shows 3 testimonials at a time ?>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
