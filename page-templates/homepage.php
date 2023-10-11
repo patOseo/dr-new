@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="content-area" id="primary">
 
-			<main class="site-main" id="main">
+			<main class="site-main mb-0" id="main">
 
 				<?php
 				while ( have_posts() ) {
@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div>
 
-	<div class="testimonials-section">
+	<div class="testimonials-section mt-0">
 		<div class="container">
 
 
@@ -143,12 +143,6 @@ $testimonials = array(
 		<div class="news-updates">
 			<h2>News & Updates</h2>
 			<?php get_template_part('loop-templates/loop', 'news'); ?>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="home-logos">
-			<img src="/wp-content/themes/davidoff/images/cca-logos.jpg" alt="Consumer Choice Awards">
 		</div>
 	</div>
 
