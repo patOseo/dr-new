@@ -2,3 +2,9 @@
 	background: $white;
 	color: $primary;
 }
+
+.wp-block-button__link {
+	&:not(.has-text-color) {
+		color: #fff !important;
+	}
+}
