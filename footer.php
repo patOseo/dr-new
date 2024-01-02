@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="<?php the_field('twitter', 'option'); ?>" target="_blank" rel="noopener,noreferrer">
 							<span class="fa-stack fa-2x text-center">
 								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-twitter fa-stack"></i>
+								<i class="fa fa-stack"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path fill="#333333" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></i>
 							</span>
 						</a>
 						<a href="<?php the_field('instagram', 'option'); ?>" target="_blank" rel="noopener,noreferrer">
