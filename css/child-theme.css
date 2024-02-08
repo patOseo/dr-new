@@ -231,11 +231,11 @@ sup {
 }
 
 a {
-  color: #1f4a7a;
+  color: #2f6fb7;
   text-decoration: none;
 }
 a:hover {
-  color: #193b62;
+  color: #265992;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3517,11 +3517,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #1f4a7a;
+  color: #2f6fb7;
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #193b62;
+  color: #265992;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -3988,7 +3988,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #1f4a7a;
+  color: #2f6fb7;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3997,7 +3997,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #193b62;
+  color: #265992;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4847,7 +4847,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #1f4a7a;
+  color: #2f6fb7;
   background-color: #fff;
   border: 1px solid #dee2e6;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4859,13 +4859,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #193b62;
+  color: #265992;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #193b62;
+  color: #265992;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(31, 74, 122, 0.25);
@@ -14185,6 +14185,10 @@ footer.site-footer a:hover {
 
 .last-block.has-background {
   margin-bottom: -1.5rem;
+}
+
+.wp-block-heading a {
+  color: #1f4a7a;
 }
 
 .card {

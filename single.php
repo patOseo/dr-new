@@ -48,7 +48,7 @@ $default_bg = get_field('default_header_background_image', 'option');
 </div><!-- #single-wrapper -->
 
 <?php if(get_field('json_schema')) { 
-	the_field('json_schema'); 
+	echo get_field('json_schema'); 
 } ?>
 
 <?php

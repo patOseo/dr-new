@@ -51,7 +51,7 @@ if ( is_front_page() ) {
 </div><!-- #full-width-page-wrapper -->
 
 <?php if(get_field('json_schema')) { 
-	the_field('json_schema'); 
+	echo get_field('json_schema'); 
 } ?>
 
 <?php
