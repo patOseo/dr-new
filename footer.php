@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		
 					<div class="col-md-12">
 
-								© <?php echo date("Y"); ?> Davidoff Roofing | All Rights Reserved
+								© <?php echo date("Y"); ?> Davidoff Roofing | All Rights Reserved | Digital Marketing by <a href="https://foundery.ca/" target="_blank" rel="noopener noreferrer">Foundery</a>
 		
 					</div><!--col end -->
 		
